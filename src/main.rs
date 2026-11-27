@@ -7,13 +7,13 @@ use walkdir::WalkDir;
 fn main() -> eframe::Result {
     let options = eframe::NativeOptions {
         viewport: egui::ViewportBuilder::default()
-            .with_title("Directory Comparitor")
+            .with_title("Directory Comparator")
             .with_inner_size([1100.0, 780.0])
             .with_min_inner_size([800.0, 500.0]),
         ..Default::default()
     };
     eframe::run_native(
-        "Directory Comparitor",
+        "Directory Comparator",
         options,
         Box::new(|_cc| Ok(Box::new(App::new()))),
     )
@@ -254,7 +254,7 @@ impl eframe::App for App {
         // ── top panel ────────────────────────────────────────────────────────
         egui::TopBottomPanel::top("header").show(ctx, |ui| {
             ui.add_space(8.0);
-            ui.heading("Directory Comparitor");
+            ui.heading("Directory Comparator");
             ui.add_space(4.0);
         });
 

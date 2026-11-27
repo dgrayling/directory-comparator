@@ -805,7 +805,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "directory-comparitor"
+name = "directory-comparator"
 version = "0.1.0"
 dependencies = [
  "eframe",
